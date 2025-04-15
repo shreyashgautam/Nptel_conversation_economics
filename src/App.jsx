@@ -28,22 +28,22 @@ function App() {
       
         <Route path="/" element={ <UserLayout/>}>
         <Route path="dashboard" element={<Dashboard />} />
+
+        
+        </Route>
         <Route path='week2' element={<QuizPage2 />} />
         <Route path='week1' element={<QuizPage1 />} />
         <Route path='week3' element={<QuizPage3 />} />
         <Route path='week4' element={<QuizPage4 />} />
-        <Route path='week5' element={<QuizPage5 />} />
-        <Route path='week6' element={<QuizPage6 />} />
-        <Route path='week7' element={<QuizPage7 />} />
-        <Route path='week8' element={<QuizPage8 />} />
-        <Route path='week9' element={<QuizPage9 />} />
-        <Route path='week10' element={<QuizPage10 />} />
-        <Route path='week11' element={<QuizPage11/>} />
-        <Route path='week12' element={<QuizPage12 />} />
-        <Route path='FullTest' element={<FullTest />} />
-        
-        </Route>
-        
+        <Route path='/week5' element={<QuizPage5 />} />
+        <Route path='/week6' element={<QuizPage6 />} />
+        <Route path='/week7' element={<QuizPage7 />} />
+        <Route path='/week8' element={<QuizPage8 />} />
+        <Route path='/week9' element={<QuizPage9 />} />
+        <Route path='/week10' element={<QuizPage10 />} />
+        <Route path='/week11' element={<QuizPage11/>} />
+        <Route path='/week12' element={<QuizPage12 />} />
+        <Route path='/FullTest' element={<FullTest />} />
 
         
       </Routes>
