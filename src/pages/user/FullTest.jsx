@@ -4,261 +4,179 @@ import { useToast } from "../../hooks/use-toast";
 
 const originalQuizData = [
  
+ 
+  // Add 69 more questions here to make it 70
   {
     question: "In the word root for conservation, con stands for",
     options: ["together", "to keep", "house", "manage"],
     correctAnswer: "together",
   },
   {
-    question: "Which of these is a deterministic factor?",
-    options: ["environmental variation", "forest fire", "death rate", "diseases"],
-    correctAnswer: "death rate",
+    question:
+      "“the ability of a single economic actor (or small group of actors) to have a substantial influence on market prices” is known as",
+    options: ["price power", "market power", "externality", "economic power"],
+    correctAnswer: "market power",
   },
   {
-    question: "I tried growing vegetables under my teak plantation, but the vegetable plants died out. I should be concerned about",
-    options: ["autophagy", "allelophagy", "autopathy", "allelopathy"],
-    correctAnswer: "allelopathy",
+    question:
+      "“an economy that allocates resources through the decentralised decisions of many firms and households as they interact in markets for goods and services” is a / an",
+    options: ["urban economy", "rural economy", "planned economy", "market economy"],
+    correctAnswer: "market economy",
   },
   {
-    question: "The movement of lions across the Gir landscape is an example of",
-    options: ["diffusion", "secular dispersal", "jump dispersal", "drifting"],
-    correctAnswer: "diffusion",
+    question: "In the word root for conservation, servare stands for",
+    options: ["together", "to keep", "house", "manage"],
+    correctAnswer: "to keep",
   },
   {
-    question: "\"The geographical distribution of a species will be controlled by that environmental factor for which the organism has the narrowest range of tolerance.\" This is the statement for",
+    question: "Which of these is true?",
     options: [
-      "Liebig’s law of the minimum",
-      "Liebig’s law of the maximum",
-      "Shelford’s law of tolerance",
-      "Shelford’s law of intolerance"
+      "Wants are unlimited, resources are unlimited",
+      "Wants are limited, resources are limited",
+      "Wants are unlimited, resources are limited",
+      "Wants are limited, resources are unlimited",
     ],
-    correctAnswer: "Shelford’s law of tolerance",
+    correctAnswer: "Wants are unlimited, resources are limited",
   },
   {
-    question: "The regular, seasonal movement of animals, often along fixed routes is called",
-    options: ["translocation", "migration", "dispersal", "drifting"],
-    correctAnswer: "migration",
+    question: "“an increase in the overall level of prices in the economy” is",
+    options: ["inflation", "deflation", "stagflation", "priceflation"],
+    correctAnswer: "inflation",
   },
   {
-    question: "Which of these is a stochastic factor?",
-    options: ["birth rate", "death rate", "population structure", "environmental fluctuation"],
-    correctAnswer: "environmental fluctuation",
-  },
-  {
-    question: "The movement of individuals away from their place of birth or hatching or seed production into a new habitat or area to survive and reproduce is called",
-    options: ["translocation", "migration", "dispersal", "drifting"],
-    correctAnswer: "dispersal",
-  },
-  {
-    question: "Scarcity of food is a",
-    options: ["chemical factor", "demographic factor", "push factor", "pull factor"],
-    correctAnswer: "push factor",
-  },
-  {
-    question: "In the word root for conservation, con stands for",
-    options: ["together", "to keep", "house", "manage"],
-    correctAnswer: "together",
-  },
-  {
-    question: "Which of these is a deterministic factor?",
-    options: ["environmental variation", "forest fire", "death rate", "diseases"],
-    correctAnswer: "death rate",
-  },
-  {
-    question: "I tried growing vegetables under my teak plantation, but the vegetable plants died out. I should be concerned about",
-    options: ["autophagy", "allelophagy", "autopathy", "allelopathy"],
-    correctAnswer: "allelopathy",
-  },
-  {
-    question: "The movement of lions across the Gir landscape is an example of",
-    options: ["diffusion", "secular dispersal", "jump dispersal", "drifting"],
-    correctAnswer: "diffusion",
-  },
-  {
-    question: "\"The geographical distribution of a species will be controlled by that environmental factor for which the organism has the narrowest range of tolerance.\" This is the statement for",
+    question: "Phillips curve shows the relation between",
     options: [
-      "Liebig’s law of the minimum",
-      "Liebig’s law of the maximum",
-      "Shelford’s law of tolerance",
-      "Shelford’s law of intolerance"
+      "profit and loss",
+      "marked price and selling price",
+      "inflation rate and unemployment rate",
+      "electricity consumption and heat output",
     ],
-    correctAnswer: "Shelford’s law of tolerance",
+    correctAnswer: "inflation rate and unemployment rate",
   },
   {
-    question: "The regular, seasonal movement of animals, often along fixed routes is called",
-    options: ["translocation", "migration", "dispersal", "drifting"],
-    correctAnswer: "migration",
-  },
-  {
-    question: "Which of these is a stochastic factor?",
-    options: ["birth rate", "death rate", "population structure", "environmental fluctuation"],
-    correctAnswer: "environmental fluctuation",
-  },
-  {
-    question: "The movement of individuals away from their place of birth or hatching or seed production into a new habitat or area to survive and reproduce is called",
-    options: ["translocation", "migration", "dispersal", "drifting"],
-    correctAnswer: "dispersal",
-  },
-  {
-    question: "Scarcity of food is a",
-    options: ["chemical factor", "demographic factor", "push factor", "pull factor"],
-    correctAnswer: "push factor",
-  },
-  {
-    question: "In the word root for conservation, con stands for",
+    question: "In the word root for Economics, oikos stands for",
     options: ["together", "to keep", "house", "manage"],
-    correctAnswer: "together",
+    correctAnswer: "house",
   },
   {
-    question: "Which of these is a deterministic factor?",
-    options: ["environmental variation", "forest fire", "death rate", "diseases"],
-    correctAnswer: "death rate",
+    question: "Most of rational thinking occurs",
+    options: ["before the margin", "at the margin", "after the margin", "none of these"],
+    correctAnswer: "at the margin",
   },
   {
-    question: "I tried growing vegetables under my teak plantation, but the vegetable plants died out. I should be concerned about",
-    options: ["autophagy", "allelophagy", "autopathy", "allelopathy"],
-    correctAnswer: "allelopathy",
+    question: "Input costs that do not require an outlay of money are",
+    options: ["explicit costs", "implicit costs", "opportunity costs", "phantom costs"],
+    correctAnswer: "implicit costs",
   },
   {
-    question: "The movement of lions across the Gir landscape is an example of",
-    options: ["diffusion", "secular dispersal", "jump dispersal", "drifting"],
-    correctAnswer: "diffusion",
+    question: "Which of these is not a pillar of sustainability?",
+    options: ["environmental sustainability", "economic sustainability", "trans-boundary sustainability", "social sustainability"],
+    correctAnswer: "trans-boundary sustainability",
   },
   {
-    question: "\"The geographical distribution of a species will be controlled by that environmental factor for which the organism has the narrowest range of tolerance.\" This is the statement for",
+    question: "The Trinity explosion of 1945 is taken as the beginning of the",
+    options: ["Holocene", "Cenocene", "Anthropocene", "Eocene"],
+    correctAnswer: "Anthropocene",
+  },
+  {
+    question: "According to Malthusian model,",
     options: [
-      "Liebig’s law of the minimum",
-      "Liebig’s law of the maximum",
-      "Shelford’s law of tolerance",
-      "Shelford’s law of intolerance"
+      "Population grows in geometric progression, food supply increases in arithmetic progression",
+      "Population grows in geometric progression, food supply increases in geometric progression",
+      "Population grows in arithmetic progression, food supply increases in arithmetic progression",
+      "Population grows in arithmetic progression, food supply increases in geometric progression",
     ],
-    correctAnswer: "Shelford’s law of tolerance",
+    correctAnswer: "Population grows in geometric progression, food supply increases in arithmetic progression",
   },
   {
-    question: "The regular, seasonal movement of animals, often along fixed routes is called",
-    options: ["translocation", "migration", "dispersal", "drifting"],
-    correctAnswer: "migration",
-  },
-  {
-    question: "Which of these is a stochastic factor?",
-    options: ["birth rate", "death rate", "population structure", "environmental fluctuation"],
-    correctAnswer: "environmental fluctuation",
-  },
-  {
-    question: "The movement of individuals away from their place of birth or hatching or seed production into a new habitat or area to survive and reproduce is called",
-    options: ["translocation", "migration", "dispersal", "drifting"],
-    correctAnswer: "dispersal",
-  },
-  {
-    question: "Scarcity of food is a",
-    options: ["chemical factor", "demographic factor", "push factor", "pull factor"],
-    correctAnswer: "push factor",
-  },
-
-  {
-    question: "In the word root for conservation, con stands for",
-    options: ["together", "to keep", "house", "manage"],
-    correctAnswer: "together",
-  },
-  {
-    question: "Which of these is a deterministic factor?",
-    options: ["environmental variation", "forest fire", "death rate", "diseases"],
-    correctAnswer: "death rate",
-  },
-  {
-    question: "I tried growing vegetables under my teak plantation, but the vegetable plants died out. I should be concerned about",
-    options: ["autophagy", "allelophagy", "autopathy", "allelopathy"],
-    correctAnswer: "allelopathy",
-  },
-  {
-    question: "The movement of lions across the Gir landscape is an example of",
-    options: ["diffusion", "secular dispersal", "jump dispersal", "drifting"],
-    correctAnswer: "diffusion",
-  },
-  {
-    question: "\"The geographical distribution of a species will be controlled by that environmental factor for which the organism has the narrowest range of tolerance.\" This is the statement for",
+    question: "The demographic transition sees a society move from",
     options: [
-      "Liebig’s law of the minimum",
-      "Liebig’s law of the maximum",
-      "Shelford’s law of tolerance",
-      "Shelford’s law of intolerance"
+      "high birth rate, low death rate to low birth rate, high death rate",
+      "low birth rate, high death rate to low birth rate, low death rate",
+      "high birth rate, high death rate to low birth rate, low death rate",
+      "high birth rate, high death rate to low birth rate, high death rate",
     ],
-    correctAnswer: "Shelford’s law of tolerance",
+    correctAnswer: "high birth rate, high death rate to low birth rate, low death rate",
   },
   {
-    question: "The regular, seasonal movement of animals, often along fixed routes is called",
-    options: ["translocation", "migration", "dispersal", "drifting"],
-    correctAnswer: "migration",
+    question: "Which of these is a pillar of sustainability",
+    options: ["social sustainability", "industrial sustainability", "agricultural sustainability", "trans-boundary sustainability"],
+    correctAnswer: "social sustainability",
   },
   {
-    question: "Which of these is a stochastic factor?",
-    options: ["birth rate", "death rate", "population structure", "environmental fluctuation"],
-    correctAnswer: "environmental fluctuation",
+    question: "Which of these is a preventive check according to Malthus?",
+    options: ["foresight", "vice", "misery", "flood"],
+    correctAnswer: "foresight",
   },
   {
-    question: "The movement of individuals away from their place of birth or hatching or seed production into a new habitat or area to survive and reproduce is called",
-    options: ["translocation", "migration", "dispersal", "drifting"],
-    correctAnswer: "dispersal",
+    question: "The quantum of human impacts can be written as",
+    options: ["I = P + A + T", "I = P X A + T", "I = P X A X T", "I = P + A X T"],
+    correctAnswer: "I = P X A X T",
   },
   {
-    question: "Scarcity of food is a",
-    options: ["chemical factor", "demographic factor", "push factor", "pull factor"],
-    correctAnswer: "push factor",
-  },{
-    question: "In the word root for conservation, con stands for",
-    options: ["together", "to keep", "house", "manage"],
-    correctAnswer: "together",
+    question: 'The book "An Essay on the Principle of Population" was written by',
+    options: ["Darwin", "Malthus", "Spencer", "Owens"],
+    correctAnswer: "Malthus",
   },
   {
-    question: "Which of these is a deterministic factor?",
-    options: ["environmental variation", "forest fire", "death rate", "diseases"],
-    correctAnswer: "death rate",
+    question: "The logistic growth equation curve is",
+    options: ["I-shaped", "J-shaped", "S-shaped", "U-shaped"],
+    correctAnswer: "S-shaped",
   },
   {
-    question: "I tried growing vegetables under my teak plantation, but the vegetable plants died out. I should be concerned about",
-    options: ["autophagy", "allelophagy", "autopathy", "allelopathy"],
-    correctAnswer: "allelopathy",
+    question: "Which of these is a positive check according to Malthus?",
+    options: ["late marriage", "war", "celibacy", "moral restraint"],
+    correctAnswer: "war",
   },
   {
-    question: "The movement of lions across the Gir landscape is an example of",
-    options: ["diffusion", "secular dispersal", "jump dispersal", "drifting"],
-    correctAnswer: "diffusion",
+    question: "___ is used to identify which potential impacts are relevant to assess. (Fill in the blank)",
+    options: ["screening", "scoping", "reporting", "review"],
+    correctAnswer: "scoping",
   },
   {
-    question: "\"The geographical distribution of a species will be controlled by that environmental factor for which the organism has the narrowest range of tolerance.\" This is the statement for",
-    options: [
-      "Liebig’s law of the minimum",
-      "Liebig’s law of the maximum",
-      "Shelford’s law of tolerance",
-      "Shelford’s law of intolerance"
-    ],
-    correctAnswer: "Shelford’s law of tolerance",
+    question: "“the potential or capacity of a material to have adverse effects on living organisms” is",
+    options: ["vulnerability", "susceptibility", "sustainability", "toxicity"],
+    correctAnswer: "toxicity",
   },
   {
-    question: "The regular, seasonal movement of animals, often along fixed routes is called",
-    options: ["translocation", "migration", "dispersal", "drifting"],
-    correctAnswer: "migration",
+    question: "A deciduous forest in Madhya Pradesh was converted to a mine. After the mining operations were over, the pits were filled up with soil and                      species of deciduous forest planted again. This is an example of",
+    options: ["recovery", "restoration", "enhancement", "replacement"],
+    correctAnswer: "restoration",
   },
   {
-    question: "Which of these is a stochastic factor?",
-    options: ["birth rate", "death rate", "population structure", "environmental fluctuation"],
-    correctAnswer: "environmental fluctuation",
+    question: "Hydrocarbons derived from incomplete burning of mineral oils are",
+    options: ["petrogenic hydrocarbons", "pyrogenic hydrocarbons", "biogenic hydrocarbons", "chemoenic hydrocarbons"],
+    correctAnswer: "pyrogenic hydrocarbons",
   },
   {
-    question: "The movement of individuals away from their place of birth or hatching or seed production into a new habitat or area to survive and reproduce is called",
-    options: ["translocation", "migration", "dispersal", "drifting"],
-    correctAnswer: "dispersal",
+    question: "A deciduous forest in Madhya Pradesh was converted to a mine. After the mining operations were over, the pits were filled up with water and a               lake was created. It is now visited by several migratory birds. This is an example of",
+    options: ["recovery", "restoration", "enhancement", "replacement"],
+    correctAnswer: "replacement",
   },
   {
-    question: "Scarcity of food is a",
-    options: ["chemical factor", "demographic factor", "push factor", "pull factor"],
-    correctAnswer: "push factor",
+    question: "“the relative effect of exposure” is",
+    options: ["vulnerability", "sensitivity", "sustainability", "toxicity"],
+    correctAnswer: "sensitivity",
   },
-
   {
-    question: "In the word root for conservation, con stands for",
-    options: ["together", "to keep", "house", "manage"],
-    correctAnswer: "together",
+    question: "___ determines which projects or developments require a full or partial impact assessment study. (Fill in the blank)",
+    options: ["screening", "scoping", "reporting", "review"],
+    correctAnswer: "screening",
+  },
+  {
+    question: "“the extent to which a chemical is available for uptake into an organism” is",
+    options: ["bioavailability", "bioaccumulation", "biomagnification", "bioresponse"],
+    correctAnswer: "bioavailability",
+  },
+  {
+    question: "Hydrocarbons derived from biological processes acting on mineral oils are",
+    options: ["petrogenic hydrocarbons", "pyrogenic hydrocarbons", "biogenic hydrocarbons", "chemoenic hydrocarbons"],
+    correctAnswer: "biogenic hydrocarbons",
+  },
+  {
+    question: "“Any changes in natural or human systems that inadvertently increase vulnerability to climatic stimuli; an adaptation that does not succeed in                reducing vulnerability but increases it instead” is a definition for",
+    options: ["adaptation", "mitigation", "maladaptation", "malmitigation"],
+    correctAnswer: "maladaptation",
   },
   {
     question: "Which of these is a deterministic factor?",
@@ -319,56 +237,6 @@ const originalQuizData = [
     question: "A root zone treatment plant is an example of",
     options: ["phytoremediation", "biological control", "biomagnification", "bioaccumulation"],
     correctAnswer: "phytoremediation",
-  },
-  {
-    question: "___ is used to identify which potential impacts are relevant to assess. (Fill in the blank)",
-    options: ["screening", "scoping", "reporting", "review"],
-    correctAnswer: "scoping",
-  },
-  {
-    question: "“the potential or capacity of a material to have adverse effects on living organisms” is",
-    options: ["vulnerability", "susceptibility", "sustainability", "toxicity"],
-    correctAnswer: "toxicity",
-  },
-  {
-    question: "A deciduous forest in Madhya Pradesh was converted to a mine. After the mining operations were over, the pits were filled up with soil and                      species of deciduous forest planted again. This is an example of",
-    options: ["recovery", "restoration", "enhancement", "replacement"],
-    correctAnswer: "restoration",
-  },
-  {
-    question: "Hydrocarbons derived from incomplete burning of mineral oils are",
-    options: ["petrogenic hydrocarbons", "pyrogenic hydrocarbons", "biogenic hydrocarbons", "chemoenic hydrocarbons"],
-    correctAnswer: "pyrogenic hydrocarbons",
-  },
-  {
-    question: "A deciduous forest in Madhya Pradesh was converted to a mine. After the mining operations were over, the pits were filled up with water and a               lake was created. It is now visited by several migratory birds. This is an example of",
-    options: ["recovery", "restoration", "enhancement", "replacement"],
-    correctAnswer: "replacement",
-  },
-  {
-    question: "“the relative effect of exposure” is",
-    options: ["vulnerability", "sensitivity", "sustainability", "toxicity"],
-    correctAnswer: "sensitivity",
-  },
-  {
-    question: "___ determines which projects or developments require a full or partial impact assessment study. (Fill in the blank)",
-    options: ["screening", "scoping", "reporting", "review"],
-    correctAnswer: "screening",
-  },
-  {
-    question: "“the extent to which a chemical is available for uptake into an organism” is",
-    options: ["bioavailability", "bioaccumulation", "biomagnification", "bioresponse"],
-    correctAnswer: "bioavailability",
-  },
-  {
-    question: "Hydrocarbons derived from biological processes acting on mineral oils are",
-    options: ["petrogenic hydrocarbons", "pyrogenic hydrocarbons", "biogenic hydrocarbons", "chemoenic hydrocarbons"],
-    correctAnswer: "biogenic hydrocarbons",
-  },
-  {
-    question: "“Any changes in natural or human systems that inadvertently increase vulnerability to climatic stimuli; an adaptation that does not succeed in                reducing vulnerability but increases it instead” is a definition for",
-    options: ["adaptation", "mitigation", "maladaptation", "malmitigation"],
-    correctAnswer: "maladaptation",
   },
   {
     question: "\"a measure of the responsiveness of quantity demanded or quantity supplied to a change in one of its determinants\" is",
@@ -570,19 +438,260 @@ const originalQuizData = [
     options: ["SMB = PMB", "SMB = PMB − MD", "SMB = PMB + MB", "SMC = PMC / MD"],
     correctAnswer: "SMB = PMB − MD",
   },
-  // Add 69 more questions here to make it 70
   {
-    question: "Which of these is true?",
-    options: [
-      "Wants are unlimited, resources are unlimited",
-      "Wants are limited, resources are limited",
-      "Wants are unlimited, resources are limited",
-      "Wants are limited, resources are unlimited",
-    ],
-    correctAnswer: "Wants are unlimited, resources are limited",
+    question: "“costs that have already been committed and cannot be recovered” are",
+    options: ["fixed costs", "variable costs", "marginal costs", "sunk costs"],
+    correctAnswer: "sunk costs"
   },
+  {
+    question: "“total revenue minus total cost, including both explicit and implicit costs” is a definition of",
+    options: ["economic profit", "accounting profit", "profit", "loss"],
+    correctAnswer: "economic profit"
+  },
+  {
+    question: "“the increase in total cost that arises from an extra unit of production” are",
+    options: ["fixed costs", "variable costs", "marginal costs", "sunk costs"],
+    correctAnswer: "marginal costs"
+  },
+  {
+    question: "A monopolist firm’s profit is given by",
+    options: [
+      "(Price - ATC) × Q",
+      "(Price - Q) × ATC",
+      "(ATC - Q) × Price",
+      "Price × Q - ATC"
+    ],
+    correctAnswer: "(Price - ATC) × Q"
+  },
+  {
+    question: "Which of the following is true for a competitive firm?",
+    options: ["P > MR", "P > MC", "MR > MC", "MR = MC"],
+    correctAnswer: "MR = MC"
+  },
+  {
+    question: "“the amount a firm receives for the sale of its output” is a definition of",
+    options: ["total revenue", "total cost", "profit", "loss"],
+    correctAnswer: "total revenue"
+  },
+  {
+    question:
+      "When the cost of production for a single firm is much lesser than the cost of production for competitive firms, we have a / an",
+    options: ["natural monopoly", "artificial monopoly", "oligopoly", "duopoly"],
+    correctAnswer: "natural monopoly"
+  },
+  {
+    question: "“costs that do not vary with the quantity of output produced” are",
+    options: ["fixed costs", "variable costs", "marginal costs", "sunk costs"],
+    correctAnswer: "fixed costs"
+  },
+  {
+    question: "“costs that vary with the quantity of output produced” are",
+    options: ["fixed costs", "variable costs", "marginal costs", "sunk costs"],
+    correctAnswer: "variable costs"
+  },
+  {
+    question: "“the increase in output that arises from an additional unit of input” is",
+    options: ["marginal product", "marginal profit", "marginal loss", "marginal cost"],
+    correctAnswer: "marginal product"
+  },
+   {
+    question: "“an absolute level of income set by the government for each family size below which a family is deemed to be in poverty” is known as",
+    options: ["deprivation line", "poverty line", "deprivation index", "poverty index"],
+    correctAnswer: "poverty line"
+  },
+  {
+    question: "Absolute poverty depends",
+    options: [
+      "on income but not on access to social services",
+      "not on income but on access to social services",
+      "on income and on access to social services",
+      "neither on income nor on access to social services"
+    ],
+    correctAnswer: "on income and on access to social services"
+  },
+  {
+    question: "“the equipment and structures used to produce goods and services” is the definition of",
+    options: ["tools", "machinery", "capital", "factors of production"],
+    correctAnswer: "capital"
+  },
+  {
+    question: "“above-equilibrium wages paid by firms to increase worker productivity” are known as",
+    options: ["compensating wage", "efficiency wage", "productivity wage", "retention wage"],
+    correctAnswer: "efficiency wage"
+  },
+  {
+    question: "“government policy aimed at protecting people against the risk of adverse events” is",
+    options: ["Social protection", "Social insurance", "Social security", "Socialism"],
+    correctAnswer: "Social insurance"
+  },
+  {
+    question: "“a difference in wages that arises to offset the non-monetary characteristics of different jobs” is known as",
+    options: [
+      "differentiating differential",
+      "compensating differential",
+      "differentiating integral",
+      "compensating integral"
+    ],
+    correctAnswer: "compensating differential"
+  },
+  {
+    question: "For a competitive and profit-maximising firm,",
+    options: [
+      "each factor’s rental price < the value of the marginal product for that factor",
+      "each factor’s rental price = the value of the marginal product for that factor",
+      "each factor’s rental price > the value of the marginal product for that factor",
+      "each factor’s rental price = the value of the average product for that factor"
+    ],
+    correctAnswer: "each factor’s rental price = the value of the marginal product for that factor"
+  },
+  {
+    question: "“a condition characterised by severe deprivation of basic human needs, including food, safe drinking water, sanitation facilities, health, shelter, education and information” is known as",
+    options: ["absolute poverty", "relative poverty", "median poverty", "poverty line"],
+    correctAnswer: "absolute poverty"
+  },
+  {
+    question: "“a condition where a household’s income is lower than the median income in the particular country” is known as",
+    options: ["absolute poverty", "relative poverty", "median poverty", "poverty line"],
+    correctAnswer: "relative poverty"
+  },
+  {
+    question: "“the increase in the amount of output from an additional unit of labor” is",
+    options: [
+      "marginal product of labour",
+      "marginal product of input",
+      "average product of labour",
+      "average product of input"
+    ],
+    correctAnswer: "marginal product of labour"
+  },
+  {
+    question: "“an absolute level of income set by the government for each family size below which a family is deemed to be in poverty” is known as",
+    options: ["deprivation line", "poverty line", "deprivation index", "poverty index"],
+    correctAnswer: "poverty line"
+  },
+  {
+    question: "Absolute poverty depends",
+    options: [
+      "on income but not on access to social services",
+      "not on income but on access to social services",
+      "on income and on access to social services",
+      "neither on income nor on access to social services"
+    ],
+    correctAnswer: "on income and on access to social services"
+  },
+  {
+    question: "“the equipment and structures used to produce goods and services” is the definition of",
+    options: ["tools", "machinery", "capital", "factors of production"],
+    correctAnswer: "capital"
+  },
+  {
+    question: "“above-equilibrium wages paid by firms to increase worker productivity” are known as",
+    options: ["compensating wage", "efficiency wage", "productivity wage", "retention wage"],
+    correctAnswer: "efficiency wage"
+  },
+  {
+    question: "“government policy aimed at protecting people against the risk of adverse events” is",
+    options: ["Social protection", "Social insurance", "Social security", "Socialism"],
+    correctAnswer: "Social insurance"
+  },
+  {
+    question: "“a difference in wages that arises to offset the non-monetary characteristics of different jobs” is known as",
+    options: [
+      "differentiating differential",
+      "compensating differential",
+      "differentiating integral",
+      "compensating integral"
+    ],
+    correctAnswer: "compensating differential"
+  },
+  {
+    question: "For a competitive and profit-maximising firm,",
+    options: [
+      "each factor’s rental price < the value of the marginal product for that factor",
+      "each factor’s rental price = the value of the marginal product for that factor",
+      "each factor’s rental price > the value of the marginal product for that factor",
+      "each factor’s rental price = the value of the average product for that factor"
+    ],
+    correctAnswer: "each factor’s rental price = the value of the marginal product for that factor"
+  },
+  {
+    question: "“a condition characterised by severe deprivation of basic human needs, including food, safe drinking water, sanitation facilities, health, shelter, education and information” is known as",
+    options: ["absolute poverty", "relative poverty", "median poverty", "poverty line"],
+    correctAnswer: "absolute poverty"
+  },
+  {
+    question: "“a condition where a household’s income is lower than the median income in the particular country” is known as",
+    options: ["absolute poverty", "relative poverty", "median poverty", "poverty line"],
+    correctAnswer: "relative poverty"
+  },
+  {
+    question: "“the increase in the amount of output from an additional unit of labor” is",
+    options: [
+      "marginal product of labour",
+      "marginal product of input",
+      "average product of labour",
+      "average product of input"
+    ],
+    correctAnswer: "marginal product of labour"
+  },
+  {
+    question: "“an action taken by an uninformed party to induce an informed party to reveal information” is known as",
+    options: ["signalling", "screening", "informing", "heuristics"],
+    correctAnswer: "screening"
+  },
+  {
+    question: "“the part of actual resources that can be developed profitably in the future” are",
+    options: ["potential resources", "actual resources", "reserve resources", "stock resources"],
+    correctAnswer: "reserve resources"
+  },
+  {
+    question: "“the limit on the consumption bundles that a consumer can afford” is known as",
+    options: ["consumption constraint", "budget constraint", "bundle constraint", "affordability constraint"],
+    correctAnswer: "budget constraint"
+  },
+  {
+    question: "“mental short cut using emotion (gut feeling) to influences the decision” is",
+    options: ["affect heuristic", "availability heuristic", "effort heuristic", "familiarity heuristic"],
+    correctAnswer: "affect heuristic"
+  },
+  {
+    question: "“those resources that are currently being used after surveying, quantification and qualification” are",
+    options: ["potential resources", "actual resources", "reserve resources", "stock resources"],
+    correctAnswer: "actual resources"
+  },
+  {
+    question: "“the change in consumption that results when a price change moves the consumer along a given indifference curve to a point with a new marginal rate of substitution” is known as",
+    options: ["income effect", "substitution effect", "indifference effect", "budget effect"],
+    correctAnswer: "substitution effect"
+  },
+  {
+    question: "An inferior good whose demand increases with price is called as",
+    options: ["Normal good", "Veblen good", "Giffen good", "Demand good"],
+    correctAnswer: "Giffen good"
+  },
+  {
+    question: "Which of these is not a property of indifference curves?",
+    options: [
+      "Higher indifference curves are preferred to lower ones",
+      "Indifference curves are downward-sloping",
+      "Indifference curves cross at right angles",
+      "Indifference curves are bowed inwards"
+    ],
+    correctAnswer: "Indifference curves cross at right angles"
+  },
+  {
+    question: "“an action taken by an informed party to reveal private information to an uninformed party” is known as",
+    options: ["signalling", "screening", "informing", "heuristics"],
+    correctAnswer: "signalling"
+  },
+  {
+    question: "“simple strategies or mental processes used to quickly form judgments, make decisions, and find solutions to complex problems” is known as",
+    options: ["signalling", "screening", "informing", "heuristics"],
+    correctAnswer: "heuristics"
+  }
   // Add more questions here...
-];const shuffleArray = (arr) => {
+];
+const shuffleArray = (arr) => {
   return [...arr].sort(() => Math.random() - 0.5);
 };
 
