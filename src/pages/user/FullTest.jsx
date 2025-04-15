@@ -694,7 +694,6 @@ const originalQuizData = [
 const shuffleArray = (arr) => {
   return [...arr].sort(() => Math.random() - 0.5);
 };
-
 const FullTest = () => {
   const [shuffledQuiz, setShuffledQuiz] = useState([]);
   const [answers, setAnswers] = useState([]);
@@ -702,8 +701,21 @@ const FullTest = () => {
   const [score, setScore] = useState(0);
   const [numQuestions, setNumQuestions] = useState(50);
   const [inputError, setInputError] = useState('');
+  const [isMobile, setIsMobile] = useState(false); // State to track mobile view
   const navigate = useNavigate();
   const { toast } = useToast();
+
+  useEffect(() => {
+    // Check if the device is mobile
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 640); // Tailwind's sm breakpoint
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     const shuffledQuestions = shuffleArray(originalQuizData)
@@ -732,25 +744,25 @@ const FullTest = () => {
         variant: "destructive",
         title: "Incomplete Quiz",
         description: "Please answer all questions before submitting.",
-        className: "bg-white text-black border border-red-500", // 👈 custom white toast
+        className: "bg-white text-black border border-red-500", // Custom white toast
       });
       return;
     }
-  
+
     let total = 0;
     answers.forEach((ans, i) => {
       if (ans === shuffledQuiz[i].correctAnswer) total += 1;
     });
     setScore(total);
     setSubmitted(true);
-  
+
     toast({
       title: "Quiz Submitted ✅",
       description: `You scored ${total} out of ${shuffledQuiz.length}`,
-      className: "bg-gray-900 text-white border border-green-600", // optional: make this look nice too
+      className: "bg-gray-900 text-white border border-green-600", // Success toast
     });
   };
-  
+
   const handleReset = () => {
     const reshuffledQuestions = shuffleArray(originalQuizData)
       .slice(0, numQuestions)
@@ -770,11 +782,22 @@ const FullTest = () => {
 
   const handleQuestionCountChange = (e) => {
     const value = parseInt(e.target.value, 10);
-    if (value >= 10 && value <= 100) {
+    if ([10, 50, 100].includes(value)) {
       setNumQuestions(value);
       setInputError('');
     } else {
-      setInputError('Please enter a value between 10 and 100');
+      setInputError('Please select a valid option: 10, 50, or 100');
+    }
+  };
+  const handleQuestionCountChange1 = (e) => {
+    const value = parseInt(e.target.value, 10);
+    if (value>100 || value<10) {
+    
+      setInputError('Please select a valid option: 10, 50, or 100');
+     
+    } else {
+      setNumQuestions(value);
+      setInputError('');
     }
   };
 
@@ -793,17 +816,31 @@ const FullTest = () => {
 
         <div className="text-center mb-6">
           <label htmlFor="numQuestions" className="mr-4 text-lg font-semibold">
-            Select number of questions (10-100):
+            Select number of questions:
           </label>
-          <input
-            id="numQuestions"
-            type="number"
-            value={numQuestions}
-            onChange={handleQuestionCountChange}
-            className="bg-gray-800 text-white border border-gray-600 p-2 rounded-lg w-24"
-            min="10"
-            max="100"
-          />
+          {/* Conditionally render the input or dropdown */}
+          {isMobile ? (
+            <select
+              id="numQuestions"
+              value={numQuestions}
+              onChange={handleQuestionCountChange}
+              className="bg-gray-800 text-white border border-gray-600 p-2 rounded-lg w-full sm:w-24"
+            >
+              <option value={10}>10 Questions</option>
+              <option value={50}>50 Questions</option>
+              <option value={100}>100 Questions</option>
+            </select>
+          ) : (
+            <input
+              id="numQuestions"
+              type="number"
+              value={numQuestions}
+              onChange={handleQuestionCountChange1}
+              className="bg-gray-800 text-white border border-gray-600 p-2 rounded-lg w-full sm:w-24"
+              min="10"
+              max="100"
+            />
+          )}
           {inputError && <p className="text-red-400 mt-2">{inputError}</p>}
         </div>
 
