@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Dashboard = () => {
-  const weeks = Array.from({ length: 12 }, (_, i) => `Week ${i + 1}`);
+  const weeks = Array.from({ length: 13 }, (_, i) => `Week ${i}`);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
@@ -66,7 +66,7 @@ const Dashboard = () => {
                   initial="hidden"
                   animate="visible"
                   variants={cardVariants}
-                  onClick={() => handleClick(index + 1)}
+                  onClick={() => handleClick(index)}
                   whileHover={{ scale: 1.05, rotate: 1 }}
                   whileTap={{ scale: 0.98 }}
                   className="group bg-gray-900 p-6 rounded-xl shadow-md cursor-pointer border-l-4 border-blue-500 

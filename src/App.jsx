@@ -17,7 +17,7 @@ import QuizPage9 from './pages/user/Quiz9';
 import QuizPage10 from './pages/user/Quiz10';
 import QuizPage11 from './pages/user/Quiz11';
 import QuizPage12 from './pages/user/Quiz12';
-
+import QuizPage0 from './pages/user/Quiz0';
 function App() {
 
 
@@ -31,6 +31,7 @@ function App() {
 
         
         </Route>
+        <Route path='week0' element={<QuizPage0 />} />
         <Route path='week2' element={<QuizPage2 />} />
         <Route path='week1' element={<QuizPage1 />} />
         <Route path='week3' element={<QuizPage3 />} />

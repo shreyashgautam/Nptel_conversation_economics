@@ -7,6 +7,106 @@ const originalQuizData = [
  
   // Add 69 more questions here to make it 70
   {
+    question: "“The ability to produce a good at a lower opportunity cost than another producer” is a definition of:",
+    options: [
+      "real advantage",
+      "monetary advantage",
+      "comparative advantage",
+      "opportunity advantage",
+    ],
+    correctAnswer: "comparative advantage",
+  },
+  {
+    question: "“Fluctuations in economic activity, such as employment and production” are referred to as:",
+    options: [
+      "business cycles",
+      "economic cycles",
+      "production cycles",
+      "market cycles",
+    ],
+    correctAnswer: "business cycles",
+  },
+  {
+    question: "The property of society getting the most it can from its scarce resources is a definition of:",
+    options: [
+      "efficiency",
+      "equality",
+      "prudence",
+      "sustainability",
+    ],
+    correctAnswer: "efficiency",
+  },
+  {
+    question: "In the word root for Economics, *nemein* stands for:",
+    options: [
+      "together",
+      "to keep",
+      "house",
+      "manage",
+    ],
+    correctAnswer: "manage",
+  },
+  {
+    question: "Whatever must be given up to obtain some item is a definition of:",
+    options: [
+      "explicit costs",
+      "implicit costs",
+      "opportunity costs",
+      "phantom costs",
+    ],
+    correctAnswer: "opportunity costs",
+  },
+  {
+    question: "Rational decision making compares:",
+    options: [
+      "average benefits to average costs",
+      "average benefits to marginal costs",
+      "marginal benefits to average costs",
+      "marginal benefits to marginal costs",
+    ],
+    correctAnswer: "marginal benefits to marginal costs",
+  },
+  {
+    question: "“Something that induces a person to act” is a definition of:",
+    options: [
+      "enticement",
+      "attraction",
+      "incentive",
+      "occupation",
+    ],
+    correctAnswer: "incentive",
+  },
+  {
+    question: "Input costs that require an outlay of money are:",
+    options: [
+      "explicit costs",
+      "implicit costs",
+      "opportunity costs",
+      "phantom costs",
+    ],
+    correctAnswer: "explicit costs",
+  },
+  {
+    question: "The property of distributing economic prosperity uniformly among the members of society is a definition of:",
+    options: [
+      "efficiency",
+      "equality",
+      "prudence",
+      "sustainability",
+    ],
+    correctAnswer: "equality",
+  },
+  {
+    question: "“The ability of an individual to own and exercise control over scarce resources” is known as:",
+    options: [
+      "property rights",
+      "resource rights",
+      "individual rights",
+      "social rights",
+    ],
+    correctAnswer: "property rights",
+  },
+  {
     question: "In the word root for conservation, con stands for",
     options: ["together", "to keep", "house", "manage"],
     correctAnswer: "together",
