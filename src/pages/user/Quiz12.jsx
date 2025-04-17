@@ -2,57 +2,56 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
-
-const originalQuizData = [
+export const originalQuizData = [
   {
-    question: "The claim that, other things being equal, the quantity demanded of a good falls when the price of the good rises” is a statement of",
-    options: ["law of demand", "law of supply", "law of quantity demanded", "law of quantity supplied"],
-    correctAnswer: "law of demand",
+    question: "As per Wildlife Protection Act 1972 (WPA 1972), wild life includes any animal, aquatic or land vegetation which forms part of any _____ .",
+    options: ["ecosystem", "state", "country", "habitat"],
+    correctAnswer: "habitat",
   },
   {
-    question: "\"a legal maximum on the price at which a good can be sold\" is",
-    options: ["price ceiling", "price floor", "selling ceiling", "selling floor"],
-    correctAnswer: "price ceiling",
+    question: "The tiger has a home range of several square kilometres, regulates the ecosystem through controlling herbivore populations and trophic cascades, and people come to tiger reserves to watch tigers. Thus, the tiger can be called as",
+    options: ["umbrella species", "keystone species", "flagship species", "all of the above"],
+    correctAnswer: "all of the above",
   },
   {
-    question: "\"a good for which, other things being equal, an increase in income leads to a decrease in demand\" is",
-    options: ["normal good", "inferior good", "Giffen good", "common good"],
-    correctAnswer: "inferior good",
+    question: "Soil formation is an example of",
+    options: ["provisioning service", "regulating service", "supporting service", "cultural service"],
+    correctAnswer: "supporting service",
   },
   {
-    question: "\"a table that shows the relationship between the price of a good and the quantity supplied\" is",
-    options: ["demand table", "demand schedule", "supply table", "supply schedule"],
-    correctAnswer: "supply schedule",
+    question: "Zoo is an example of",
+    options: ["in-situ conservation", "ex-situ conservation", "in-situ preservation", "ex-situ preservation"],
+    correctAnswer: "ex-situ conservation",
   },
   {
-    question: "\"a graph of the relationship between the price of a good and the quantity demanded\" is",
-    options: ["demand curve", "supply curve", "Laffer's curve", "Phillips curve"],
-    correctAnswer: "demand curve",
+    question: "The fig tree bears fruits in times when animals do not have much access to food. In this context, it would be a good example of",
+    options: ["least concern species", "keystone species", "flagship species", "extinct species"],
+    correctAnswer: "keystone species",
   },
   {
-    question: "\"a table that shows the relationship between the price of a good and the quantity demanded\" is",
-    options: ["demand table", "demand schedule", "supply table", "supply schedule"],
-    correctAnswer: "demand schedule",
+    question: "Nutrient cycling is an example of",
+    options: ["provisioning service", "regulating service", "supporting service", "cultural service"],
+    correctAnswer: "supporting service",
   },
   {
-    question: "\"a measure of how much the quantity demanded of one good responds to a change in the price of another good, computed as the percentage change in quantity demanded of the first good divided by the percentage change in price of the second good\" is",
-    options: ["price elasticity of demand", "income elasticity of demand", "cross-price elasticity of demand", "price elasticity of supply"],
-    correctAnswer: "cross-price elasticity of demand",
+    question: "People come to Sessa orchid sanctuary in Arunachal Pradesh to witness orchids, which in this context would be classified as",
+    options: ["umbrella species", "keystone species", "flagship species", "extinct species"],
+    correctAnswer: "flagship species",
   },
   {
-    question: "Rice and wheat are",
-    options: ["substitutes", "complements", "club goods", "public goods"],
-    correctAnswer: "substitutes",
+    question: "We prefer those areas for the creation of a conservation reserve where the level of threat is",
+    options: ["very high", "medium", "very low", "non-existent"],
+    correctAnswer: "medium",
   },
   {
-    question: "\"a good for which, other things being equal, an increase in income leads to an increase in demand\" is",
-    options: ["normal good", "inferior good", "Giffen good", "common good"],
-    correctAnswer: "normal good",
+    question: "The elephant has a home range of several square kilometres, regulates the ecosystem by its habit of destructive feeding, and people can relate to this animal which is important for conservation. Given this background, the elephant can be called as",
+    options: ["umbrella species", "keystone species", "flagship species", "all of the above"],
+    correctAnswer: "all of the above",
   },
   {
-    question: "\"a measure of how much the quantity demanded of a good responds to a change in the price of that good, computed as the percentage change in quantity demanded divided by the percentage change in price\" is",
-    options: ["price elasticity of demand", "income elasticity of demand", "cross-price elasticity of demand", "price elasticity of supply"],
-    correctAnswer: "price elasticity of demand",
+    question: "Biological control of pest populations is an example of",
+    options: ["provisioning service", "regulating service", "supporting service", "cultural service"],
+    correctAnswer: "regulating service",
   },
 ];
 
